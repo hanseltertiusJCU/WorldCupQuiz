@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">World Cup Quiz</string>
+    <string name="question_1">Q1. Which country held 2018 FIFA World Cup?</string>
+    <string name="question_1_answer_1">South Africa</string>
+    <string name="question_1_answer_2">Qatar</string>
+    <string name="question_1_answer_3">Russia</string>
+    <string name="question_1_answer_4">Brazil</string>
+    <string name="question_2">Q2. Which country is the world champion of this year FIFA World Cup?</string>
+    <string name="question_2_answer_1">France</string>
+    <string name="question_2_answer_2">Germany</string>
+    <string name="question_2_answer_3">England</string>
+    <string name="question_2_answer_4">Brazil</string>
+    <string name="question_3">Q3. What kind of new technology that was implemented in 2018 World Cup?</string>
+    <string name="question_3_answer_1">Vanishing Spray</string>
+    <string name="question_3_answer_2">Goal Line Technology</string>
+    <string name="question_3_answer_3">3D Technology</string>
+    <string name="question_3_answer_4">VAR</string>
+    <string name="question_4">Q4. Which venues were held in the 2018 World Cup?</string>
+    <string name="question_4_answer_1">Moscow</string>
+    <string name="question_4_answer_2">Novosibirsk</string>
+    <string name="question_4_answer_3">Saint Petersburg</string>
+    <string name="question_4_answer_4">Yekaterinburg</string>
+    <string name="question_5">Q5. Which country are the finalist of 2018 World Cup?</string>
+    <string name="question_5_answer_1">England</string>
+    <string name="question_5_answer_2">Croatia</string>
+    <string name="question_5_answer_3">France</string>
+    <string name="question_5_answer_4">Belgium</string>
+    <string name="question_6">Q6. Which countries have won 2 FIFA World Cup trophies?</string>
+    <string name="question_6_answer_1">Italy</string>
+    <string name="question_6_answer_2">France</string>
+    <string name="question_6_answer_3">Uruguay</string>
+    <string name="question_6_answer_4">Argentina</string>
+    <string name="question_7">Q7. Who won Golden Ball Awards in 2018 FIFA World Cup?</string>
+    <string name="question_7_answer">Luka Modric</string>
+    <string name="submit">Submit</string>
 </resources>
