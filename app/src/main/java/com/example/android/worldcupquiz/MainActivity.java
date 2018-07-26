@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
      * @return finalGrades;
      */
     private int getGrades(int marks){
-        int finalGrades = 0;
 
         //Answer key for each question
         RadioButton answerKeyQuestionOne = (RadioButton) findViewById(R.id.question_1_choice_3);
@@ -45,12 +44,16 @@ public class MainActivity extends AppCompatActivity {
         RadioButton answerKeyQuestionThree = (RadioButton) findViewById(R.id.question_3_choice_4);
 
         CheckBox answerKeyQuestionFourOne = (CheckBox) findViewById(R.id.question_4_choice_1);
+        CheckBox wrongAnswerQuestionFour = (CheckBox) findViewById(R.id.question_4_choice_2);
         CheckBox answerKeyQuestionFourTwo = (CheckBox) findViewById(R.id.question_4_choice_3);
         CheckBox answerKeyQuestionFourThree = (CheckBox) findViewById(R.id.question_4_choice_4);
 
+        CheckBox wrongAnswerQuestionFiveOne = (CheckBox) findViewById(R.id.question_5_choice_1);
         CheckBox answerKeyQuestionFiveOne = (CheckBox) findViewById(R.id.question_5_choice_2);
         CheckBox answerKeyQuestionFiveTwo = (CheckBox) findViewById(R.id.question_5_choice_3);
+        CheckBox wrongAnswerQuestionFiveTwo = (CheckBox) findViewById(R.id.question_5_choice_4);
 
+        CheckBox wrongAnswerQuestionSix = (CheckBox) findViewById(R.id.question_6_choice_1);
         CheckBox answerKeyQuestionSixOne = (CheckBox) findViewById(R.id.question_6_choice_2);
         CheckBox answerKeyQuestionSixTwo = (CheckBox) findViewById(R.id.question_6_choice_3);
         CheckBox answerKeyQuestionSixThree = (CheckBox) findViewById(R.id.question_6_choice_4);
@@ -60,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         String answerKeyQuestionSevenTwo = "Modric";
         String answerQuestionSeven = questionSeven.getText().toString();
 
-        //Check for correct answers
+        //Check whether the answer is correct
         if(answerKeyQuestionOne.isChecked()){
             marks++;
         }
@@ -73,15 +76,15 @@ public class MainActivity extends AppCompatActivity {
             marks++;
         }
 
-        if(answerKeyQuestionFourOne.isChecked() && answerKeyQuestionFourTwo.isChecked() && answerKeyQuestionFourThree.isChecked()){
+        if(answerKeyQuestionFourOne.isChecked() && answerKeyQuestionFourTwo.isChecked() && answerKeyQuestionFourThree.isChecked() && !wrongAnswerQuestionFour.isChecked()){
             marks++;
         }
 
-        if(answerKeyQuestionFiveOne.isChecked() && answerKeyQuestionFiveTwo.isChecked()){
+        if(answerKeyQuestionFiveOne.isChecked() && answerKeyQuestionFiveTwo.isChecked() && !wrongAnswerQuestionFiveOne.isChecked() && !wrongAnswerQuestionFiveTwo.isChecked()){
             marks++;
         }
 
-        if(answerKeyQuestionSixOne.isChecked() && answerKeyQuestionSixTwo.isChecked() && answerKeyQuestionSixThree.isChecked()){
+        if(answerKeyQuestionSixOne.isChecked() && answerKeyQuestionSixTwo.isChecked() && answerKeyQuestionSixThree.isChecked() && !wrongAnswerQuestionSix.isChecked() ){
             marks++;
         }
 
@@ -89,9 +92,9 @@ public class MainActivity extends AppCompatActivity {
             marks++;
         }
 
-        finalGrades = marks; //this statement is to ensure that the value of final grades is the same as the input parameter.
-
-        return finalGrades;
+        return marks;
 
     }
+
+    //make a method to make sure that all of the questions are answered
 }

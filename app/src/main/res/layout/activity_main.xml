@@ -2,7 +2,8 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#0D47A1">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -16,7 +17,8 @@
             android:text="@string/question_1"
             android:textSize="24sp"
             android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="#D50000"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -33,7 +35,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_answer_1"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_1_choice_2"
@@ -41,7 +45,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_answer_2"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_1_choice_3"
@@ -49,7 +55,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_answer_3"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_1_choice_4"
@@ -57,7 +65,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_answer_4"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
         </RadioGroup>
 
         <TextView
@@ -66,7 +76,8 @@
             android:text="@string/question_2"
             android:textSize="24sp"
             android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="#D50000"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -83,7 +94,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_2_answer_1"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_2_choice_2"
@@ -91,7 +104,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_2_answer_2"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_2_choice_3"
@@ -99,7 +114,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_2_answer_3"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_2_choice_4"
@@ -107,7 +124,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_2_answer_4"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
         </RadioGroup>
 
         <TextView
@@ -116,7 +135,9 @@
             android:text="@string/question_3"
             android:textSize="24sp"
             android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="#D50000"
+            />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -133,7 +154,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_answer_1"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_3_choice_2"
@@ -141,7 +164,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_answer_2"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_3_choice_3"
@@ -149,7 +174,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_answer_3"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <RadioButton
                 android:id="@+id/question_3_choice_4"
@@ -157,7 +184,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_3_answer_4"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
         </RadioGroup>
 
         <TextView
@@ -166,7 +195,8 @@
             android:text="@string/question_4"
             android:textSize="24sp"
             android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="#D50000"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -182,7 +212,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_4_answer_1"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_4_choice_2"
@@ -190,7 +222,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_4_answer_2"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_4_choice_3"
@@ -198,7 +232,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_4_answer_3"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_4_choice_4"
@@ -206,7 +242,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_4_answer_4"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
         </LinearLayout>
 
         <TextView
@@ -215,7 +253,8 @@
             android:text="@string/question_5"
             android:textSize="24sp"
             android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="#D50000"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -231,7 +270,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_1"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_5_choice_2"
@@ -239,7 +280,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_2"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_5_choice_3"
@@ -247,7 +290,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_3"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_5_choice_4"
@@ -255,7 +300,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_4"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
         </LinearLayout>
 
         <TextView
@@ -264,7 +311,8 @@
             android:text="@string/question_6"
             android:textSize="24sp"
             android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="#D50000"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -280,7 +328,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_6_answer_1"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_6_choice_2"
@@ -288,7 +338,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_6_answer_2"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_6_choice_3"
@@ -296,7 +348,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_6_answer_3"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:id="@+id/question_6_choice_4"
@@ -304,7 +358,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_6_answer_4"
                 android:paddingLeft="16dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
         </LinearLayout>
 
         <TextView
@@ -313,7 +369,8 @@
             android:text="@string/question_7"
             android:textSize="24sp"
             android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="#D50000"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -327,7 +384,8 @@
                 android:id="@+id/question_7_answer_space"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textCapWords"/>
+                android:inputType="textCapWords"
+                android:backgroundTint="#ffffff"/>
         </LinearLayout>
 
         <Button
@@ -337,6 +395,8 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/submit"
-            android:onClick="showGrades"/>
+            android:onClick="showGrades"
+            android:textColor="#ffffff"
+            android:background="#D50000"/>
     </LinearLayout>
 </ScrollView>
