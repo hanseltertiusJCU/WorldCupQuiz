@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int grades = 0; // Global variable for grades
+    int answeredQuestions = 0; // Global variable for answered questions
 
 
     @Override
@@ -24,7 +25,13 @@ public class MainActivity extends AppCompatActivity {
      * @param view views in the activity_main.xml
      */
     public void showGrades(View view){
-        Toast.makeText(this, "You got " + getGrades(grades) + " out of 7 questions", Toast.LENGTH_SHORT).show();
+        int questionsAnswered = getQuestionAnswered(answeredQuestions);
+        int questionsLeft = 7 - questionsAnswered;
+        if(questionsAnswered < 7){
+            Toast.makeText(this, "You must answered all questions. " + questionsLeft + " question(s) left", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "You got " + getGrades(grades) + " out of " + questionsAnswered + " questions", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
@@ -32,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
      * This function gets the final grades for the quiz.
      *
      * @param marks refers to the grade of this quiz
-     * @return finalGrades;
+     * @return marks;
      */
     private int getGrades(int marks){
 
@@ -96,5 +103,78 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //make a method to make sure that all of the questions are answered
+    /**
+     * This function gets how many questions are answered for the quiz.
+     *
+     * @param amountAnswered refers to the amount of answer that the user has answered.
+     * @return amountAnswered;
+     */
+    private int getQuestionAnswered(int amountAnswered){
+
+        //Answer key for each question
+        RadioButton answerOneQuestionOne = (RadioButton) findViewById(R.id.question_1_choice_1);
+        RadioButton answerTwoQuestionOne = (RadioButton) findViewById(R.id.question_1_choice_2);
+        RadioButton answerThreeQuestionOne = (RadioButton) findViewById(R.id.question_1_choice_3);
+        RadioButton answerFourQuestionOne = (RadioButton) findViewById(R.id.question_1_choice_4);
+
+        RadioButton answerOneQuestionTwo = (RadioButton) findViewById(R.id.question_2_choice_1);
+        RadioButton answerTwoQuestionTwo = (RadioButton) findViewById(R.id.question_2_choice_2);
+        RadioButton answerThreeQuestionTwo = (RadioButton) findViewById(R.id.question_2_choice_3);
+        RadioButton answerFourQuestionTwo = (RadioButton) findViewById(R.id.question_2_choice_4);
+
+        RadioButton answerOneQuestionThree = (RadioButton) findViewById(R.id.question_3_choice_1);
+        RadioButton answerTwoQuestionThree = (RadioButton) findViewById(R.id.question_3_choice_2);
+        RadioButton answerThreeQuestionThree = (RadioButton) findViewById(R.id.question_3_choice_3);
+        RadioButton answerFourQuestionThree = (RadioButton) findViewById(R.id.question_3_choice_4);
+
+        CheckBox answerOneQuestionFour = (CheckBox) findViewById(R.id.question_4_choice_1);
+        CheckBox answerTwoQuestionFour = (CheckBox) findViewById(R.id.question_4_choice_2);
+        CheckBox answerThreeQuestionFour = (CheckBox) findViewById(R.id.question_4_choice_3);
+        CheckBox answerFourQuestionFour = (CheckBox) findViewById(R.id.question_4_choice_4);
+
+        CheckBox answerOneQuestionFive = (CheckBox) findViewById(R.id.question_5_choice_1);
+        CheckBox answerTwoQuestionFive = (CheckBox) findViewById(R.id.question_5_choice_2);
+        CheckBox answerThreeQuestionFive = (CheckBox) findViewById(R.id.question_5_choice_3);
+        CheckBox answerFourQuestionFive = (CheckBox) findViewById(R.id.question_5_choice_4);
+
+        CheckBox answerOneQuestionSix = (CheckBox) findViewById(R.id.question_6_choice_1);
+        CheckBox answerTwoQuestionSix = (CheckBox) findViewById(R.id.question_6_choice_2);
+        CheckBox answerThreeQuestionSix = (CheckBox) findViewById(R.id.question_6_choice_3);
+        CheckBox answerFourQuestionSix = (CheckBox) findViewById(R.id.question_6_choice_4);
+
+        EditText answerSpaceQuestionSeven = (EditText) findViewById(R.id.question_7_answer_space);
+        String answerQuestionSeven = answerSpaceQuestionSeven.getText().toString();
+
+        //Check whether the answer is correct
+        if(answerOneQuestionOne.isChecked() || answerTwoQuestionOne.isChecked() || answerThreeQuestionOne.isChecked() || answerFourQuestionOne.isChecked()){
+            amountAnswered++;
+        }
+
+        if(answerOneQuestionTwo.isChecked() || answerTwoQuestionTwo.isChecked() || answerThreeQuestionTwo.isChecked() || answerFourQuestionTwo.isChecked()){
+            amountAnswered++;
+        }
+
+        if(answerOneQuestionThree.isChecked() || answerTwoQuestionThree.isChecked() || answerThreeQuestionThree.isChecked() || answerFourQuestionThree.isChecked()){
+            amountAnswered++;
+        }
+
+        if(answerOneQuestionFour.isChecked() || answerTwoQuestionFour.isChecked() || answerThreeQuestionFour.isChecked() || answerFourQuestionFour.isChecked()){
+            amountAnswered++;
+        }
+
+        if(answerOneQuestionFive.isChecked() || answerTwoQuestionFive.isChecked() || answerThreeQuestionFive.isChecked() || answerFourQuestionFive.isChecked()){
+            amountAnswered++;
+        }
+
+        if(answerOneQuestionSix.isChecked() || answerTwoQuestionSix.isChecked() || answerThreeQuestionSix.isChecked() || answerFourQuestionSix.isChecked()){
+            amountAnswered++;
+        }
+
+        if (!answerQuestionSeven.matches("")) {
+            amountAnswered++;
+        }
+
+        return amountAnswered;
+
+    }
 }
